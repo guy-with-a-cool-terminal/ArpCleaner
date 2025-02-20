@@ -40,7 +40,7 @@ def main():
                     mac_address = match.group(2)
                     if mac_address not in trusted_macs:
                         clear_arp_entry(ip_address)
-        time.sleep(60)
+        time.sleep(30)
 
 if __name__ == "__main__":
     main()
